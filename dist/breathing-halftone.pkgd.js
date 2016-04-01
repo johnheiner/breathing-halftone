@@ -549,7 +549,7 @@ var channelFillStyles = {
 Halftone.prototype.renderGrid = function( channel ) {
   var proxy = this.proxyCanvases[ channel ];
   // clear
-  proxy.ctx.fillStyle = this.options.isAdditive ? 'black' : 'white';
+  // proxy.ctx.fillStyle = this.options.isAdditive ? 'black' : 'white';
   proxy.ctx.fillRect( 0, 0, this.width, this.height );
 
   // set fill color
