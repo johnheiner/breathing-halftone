@@ -517,7 +517,7 @@ Halftone.prototype.update = function() {
 Halftone.prototype.render = function() {
   // clear
   this.ctx.globalCompositeOperation = 'source-over';
-  this.ctx.fillStyle = this.options.isAdditive ? 'black' : 'white';
+  this.ctx.fillStyle = this.options.isAdditive ? 'transparent' : 'transparent';
   this.ctx.fillRect( 0, 0, this.width, this.height );
 
   // composite grids
